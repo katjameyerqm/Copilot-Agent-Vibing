@@ -4,7 +4,7 @@ Example for Copilot: A modern ticket management application built with Angular 2
 
 ## Features
 
-- 🎯 **Drag & Drop Ticket Management**: Organize tickets across three lists (To Do, Ongoing, Done)
+- 🎯 **Drag & Drop Ticket Management**: Organize tickets across four lists (To Do, Ongoing, Blocked, Done)
 - 💾 **Persistent Storage**: All data is saved locally using IndexedDB via Dexie.js
 - 🚀 **Modern Angular**: Built with Angular 21 using standalone components and signals
 - 📱 **Responsive Design**: Clean, modern UI that works on all devices
