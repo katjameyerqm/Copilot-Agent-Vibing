@@ -22,9 +22,13 @@ export class DatabaseService extends Dexie {
       tickets: '++id, title, listId, order',
       ticketLists: 'id, name, order'
     }).upgrade(async (tx) => {
-      const list = await tx.table('ticketLists').get('in-progress');
-      if (list && list.name === 'In Progress') {
-        await tx.table('ticketLists').update('in-progress', { name: 'Ongoing' });
+      try {
+        const list = await tx.table('ticketLists').get('in-progress');
+        if (list && list.name === 'In Progress') {
+          await tx.table('ticketLists').update('in-progress', { name: 'Ongoing' });
+        }
+      } catch (error) {
+        console.error('Migration error: Failed to update list name from "In Progress" to "Ongoing"', error);
       }
     });
   }
