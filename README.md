@@ -13,7 +13,7 @@ Example for Copilot: A modern ticket management application built with Angular 2
 
 ## Live Demo
 
-Visit the live application at: [https://qualityminds.github.io/Copilot-Agent-Vibing/]
+Visit the live application at: https://katjameyerqm.github.io/Copilot-Agent-Vibing/
 
 ## Getting Started
 
@@ -26,7 +26,7 @@ Visit the live application at: [https://qualityminds.github.io/Copilot-Agent-Vib
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/QualityMinds/Copilot-Agent-Vibing.git
+git clone https://github.com/katjameyerqm/Copilot-Agent-Vibing.git
 cd Copilot-Agent-Vibing
 ```
 
