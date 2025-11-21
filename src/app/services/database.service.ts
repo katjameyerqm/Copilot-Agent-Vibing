@@ -23,7 +23,7 @@ export class DatabaseService extends Dexie {
     if (count === 0) {
       await this.ticketLists.bulkAdd([
         { id: 'todo', name: 'To Do', order: 0 },
-        { id: 'in-progress', name: 'In Progress', order: 1 },
+        { id: 'in-progress', name: 'Ongoing', order: 1 },
         { id: 'done', name: 'Done', order: 2 }
       ]);
     }
