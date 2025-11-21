@@ -42,6 +42,8 @@ export class DatabaseService extends Dexie {
         const doneList = await tx.table('ticketLists').get('done');
         if (doneList) {
           await tx.table('ticketLists').update('done', { order: 3 });
+        } else {
+          console.warn('Migration warning: "Done" list not found during migration');
         }
         
         // Add "Blocked" list with order 2
