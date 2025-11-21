@@ -16,6 +16,17 @@ export class DatabaseService extends Dexie {
       tickets: '++id, title, listId, order',
       ticketLists: 'id, name, order'
     });
+
+    // Version 2: Migrate "In Progress" to "Ongoing"
+    this.version(2).stores({
+      tickets: '++id, title, listId, order',
+      ticketLists: 'id, name, order'
+    }).upgrade(async (tx) => {
+      const list = await tx.table('ticketLists').get('in-progress');
+      if (list && list.name === 'In Progress') {
+        await tx.table('ticketLists').update('in-progress', { name: 'Ongoing' });
+      }
+    });
   }
 
   async initializeDefaultLists(): Promise<void> {
