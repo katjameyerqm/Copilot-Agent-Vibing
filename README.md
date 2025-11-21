@@ -13,7 +13,7 @@ A modern ticket management application built with Angular 21, featuring drag-and
 
 ## Live Demo
 
-Visit the live application at: `https://qualityminds.github.io/Vibing/`
+Visit the live application at: [https://qualityminds.github.io/Copilot-Agent-Vibing/]
 
 ## Getting Started
 
@@ -26,7 +26,7 @@ Visit the live application at: `https://qualityminds.github.io/Vibing/`
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/QualityMinds/Vibing.git
+git clone https://github.com/QualityMinds/Copilot-Agent-Vibing.git
 cd Vibing
 ```
 
@@ -74,7 +74,7 @@ This will compile your project and store the build artifacts in the `dist/` dire
 For GitHub Pages deployment with proper base href:
 
 ```bash
-npm run build -- --base-href=/Vibing/
+npm run build -- --base-href=/Copilot-Agent-Vibing/
 ```
 
 ## Technology Stack
